@@ -1,5 +1,5 @@
 {
-  "homepage": "https://developerfolio.js.org/",
+  "homepage": "https://beshoy97.github.io/beshoy/",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +22,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b master -d build",
+    "build": "node fetch.js && react-scripts build --output-path docs",
+    "deploy": "echo 'Deployment handled by docs folder. Use git push to update GitHub Pages.'",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
